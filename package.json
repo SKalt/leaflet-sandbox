@@ -1,0 +1,23 @@
+{
+  "name": "leaflet-sandbox",
+  "version": "1.0.0",
+  "description": "A sandbox to test out Leaflet maps, geojson files, and expose modules as globals",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKalt/leaflet-sandbox.git"
+  },
+  "keywords": [
+    "leaflet",
+    "GIS"
+  ],
+  "author": "Steven Kalt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SKalt/leaflet-sandbox/issues"
+  },
+  "homepage": "https://github.com/SKalt/leaflet-sandbox#readme"
+}

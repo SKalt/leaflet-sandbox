@@ -7,7 +7,7 @@ you.
 ```
 git clone this-gh-repo && cd leaflet-sandbox && npm install
 ```
-downloads and insalls the sandbox. Note node and npm are required.
+downloads and installs the sandbox. Note `node` and `npm` are required.
 
 # Usage
 `npm run start` will start the page in your default browser.

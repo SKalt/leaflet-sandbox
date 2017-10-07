@@ -4,7 +4,8 @@
   "description": "A sandbox to test out Leaflet maps, geojson files, and expose modules as globals",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

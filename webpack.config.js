@@ -9,7 +9,7 @@ const fs = require('fs');
 module.exports = (env={}) => { // https://webpack.js.org/guides/environment-variables/
   const hotOrNot = env.hot ? true : false;
   return {
-    entry: './scripts/index.js',
+    entry: './src/js/index.js',
     output: {
       filename: 'js/index.bundle.js',
       path: path.resolve(__dirname, 'dist')
@@ -44,7 +44,7 @@ module.exports = (env={}) => { // https://webpack.js.org/guides/environment-vari
       new webpack.ProvidePlugin({
         /* global name : module name */
         L: 'leaflet'
-      })
+      }),
       hotOrNot && new webpack.HotModuleReplacementPlugin()
       /* +++ your plugins here +++ */
     ].filter(plugin => plugin ? true : false),

@@ -1,16 +1,4 @@
 import '../css/style.css';
-// note you can import geojson!
-
-require('leaflet/dist/leaflet.css');
-delete L.Icon.Default.prototype._getIconUrl;
-// see https://github.com/PaulLeCam/react-leaflet/issues/255 for why this is
-// neccessary
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-});
-
 // initialize the map on the "map" div with a given center and zoom
 window.map = L.map('map', {
     center: [51.505, -0.09],

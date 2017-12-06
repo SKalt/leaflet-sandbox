@@ -1,4 +1,6 @@
 import '../css/style.css';
+// note you can import geojson!
+
 require('leaflet/dist/leaflet.css');
 delete L.Icon.Default.prototype._getIconUrl;
 // see https://github.com/PaulLeCam/react-leaflet/issues/255 for why this is
@@ -10,7 +12,7 @@ L.Icon.Default.mergeOptions({
 });
 
 // initialize the map on the "map" div with a given center and zoom
-var map = L.map('map', {
+window.map = L.map('map', {
     center: [51.505, -0.09],
     zoom: 13
 });
@@ -19,6 +21,6 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([51.5, -0.09]).addTo(map)
+window.marker = L.marker([51.5, -0.09]).addTo(map)
     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     .openPopup();
